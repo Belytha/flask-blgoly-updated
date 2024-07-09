@@ -1,0 +1,78 @@
+.container{
+    width: 70%;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+    padding: 10px 5px;
+}
+body{
+    background-color: rgb(138, 149, 196);
+}
+*{
+    margin: 5px;
+}
+li{
+    list-style: none;
+}
+label{
+    display: block;
+}
+input[type='radio']{
+    display: none;
+}
+button{
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.button{
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width:fit-content;
+    height:fit-content;
+    padding: 2px;
+}
+button:hover{
+    cursor:pointer;
+}
+
+.red{
+    background-color: rgb(185, 36, 36);
+}
+
+.blue{
+    background-color: rgb(138, 149, 196);
+}
+.green{
+    background-color: rgb(77, 156, 88);
+}
+.go-back{
+    color: rgb(138, 149, 196);
+    border: 2px solid rgb(138, 149, 196);
+}
+
+img{
+    height:100px;
+    width:100px;
+    object-fit: cover;
+    display: inline;
+
+}
+li, button, .button{
+    font-size: 20px;
+}
+h1 .user-name{
+    display:inline-block;
+}
+.delete-form{
+    display:inline-block;
+}
+br{
+    background-color: black;
+}
+.tag{
+    background-color: rgb(102, 86, 194);
+}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}Add Post{% endblock %}
+{% block content %}
+    <h1>Add Post for {{user.first_name}} {{user.last_name}}</h1>
+    <form method="post" action='/users/{{user.id}}/posts/new'>
+        <label>Title: <input type="text" name="title" id="title" required></label>
+        <label>Content: <textarea name="content" id="content" required></textarea></label>
+        
+        {% for tag in tags %}
+        <li><label><input type="checkbox" id="{{tag.name}}" name="tags" value="{{tag.id}}">{{tag.name}}</label></li>
+        {% endfor %}
+        
+        <a href="/users/{{user.id}}"><div class="blue button">Cancel</div></a>
+        <button type="submit" class="green">Submit</button>
+    </form>
+    {% endblock %}
